@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="FKSwiftWB" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="q7K-1r-8PT" id="3Qd-eA-1TA"/>
+                <outlet property="iconViewBottonCons" destination="34d-Dk-wtV" id="soX-3y-eBf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-AQ-oJL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="q7K-1r-8PT">
+                    <rect key="frame" x="255" y="360" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="MLe-Dv-3ig"/>
+                        <constraint firstAttribute="width" constant="90" id="aN4-vu-d5D"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-B1-U9q">
+                    <rect key="frame" x="268" y="470" width="64" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="q7K-1r-8PT" secondAttribute="bottom" constant="150" id="34d-Dk-wtV"/>
+                <constraint firstItem="fkm-AQ-oJL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3cg-xn-Tns"/>
+                <constraint firstAttribute="trailing" secondItem="fkm-AQ-oJL" secondAttribute="trailing" id="F85-PR-KQn"/>
+                <constraint firstItem="fkm-AQ-oJL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N6H-TH-wV0"/>
+                <constraint firstAttribute="bottom" secondItem="fkm-AQ-oJL" secondAttribute="bottom" id="PLF-ms-2Hs"/>
+                <constraint firstItem="aZf-B1-U9q" firstAttribute="centerX" secondItem="q7K-1r-8PT" secondAttribute="centerX" id="jqP-i6-cQi"/>
+                <constraint firstItem="q7K-1r-8PT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oBe-Tj-6jI"/>
+                <constraint firstItem="aZf-B1-U9q" firstAttribute="top" secondItem="q7K-1r-8PT" secondAttribute="bottom" constant="20" id="xN7-Yu-2Q3"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="375" height="667"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>

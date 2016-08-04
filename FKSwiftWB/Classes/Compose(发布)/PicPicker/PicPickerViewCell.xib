@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PicPickerViewCell" customModule="FKSwiftWB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="208"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbW-YT-eS6">
+                        <rect key="frame" x="0.0" y="0.0" width="214" height="208"/>
+                        <state key="normal" backgroundImage="compose_pic_add"/>
+                        <state key="highlighted" backgroundImage="compose_pic_add_highlighted"/>
+                        <connections>
+                            <action selector="addPhotoClick" destination="gTV-IL-0wX" eventType="touchUpInside" id="FPP-g1-z70"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Rd-Cv-xeE">
+                        <rect key="frame" x="0.0" y="0.0" width="214" height="208"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pib-Nu-qFh">
+                        <rect key="frame" x="190" y="0.0" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Fk0-PN-le4"/>
+                            <constraint firstAttribute="height" constant="24" id="SVQ-h9-bjh"/>
+                        </constraints>
+                        <state key="normal" image="compose_photo_close"/>
+                        <connections>
+                            <action selector="removePhotoClick" destination="gTV-IL-0wX" eventType="touchUpInside" id="SKd-PQ-9lk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Rd-Cv-xeE" secondAttribute="trailing" id="76s-Xa-W9B"/>
+                <constraint firstItem="1Rd-Cv-xeE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C9T-ou-TPg"/>
+                <constraint firstItem="DbW-YT-eS6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fa6-zh-nBI"/>
+                <constraint firstAttribute="trailing" secondItem="Pib-Nu-qFh" secondAttribute="trailing" id="Gs8-qX-Cda"/>
+                <constraint firstItem="DbW-YT-eS6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ntd-Ip-VKb"/>
+                <constraint firstAttribute="bottom" secondItem="1Rd-Cv-xeE" secondAttribute="bottom" id="RF9-9S-6r1"/>
+                <constraint firstItem="1Rd-Cv-xeE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UsM-GN-teO"/>
+                <constraint firstItem="Pib-Nu-qFh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qQn-8V-HGy"/>
+                <constraint firstAttribute="bottom" secondItem="DbW-YT-eS6" secondAttribute="bottom" id="vBD-V1-Xki"/>
+                <constraint firstAttribute="trailing" secondItem="DbW-YT-eS6" secondAttribute="trailing" id="xlh-WP-OEG"/>
+            </constraints>
+            <size key="customSize" width="214" height="208"/>
+            <connections>
+                <outlet property="addPhotoBtn" destination="DbW-YT-eS6" id="S5T-LC-2aE"/>
+                <outlet property="imageView" destination="1Rd-Cv-xeE" id="RW2-Ea-jBH"/>
+                <outlet property="removePhotoBtn" destination="Pib-Nu-qFh" id="fix-tD-onz"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="275"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="compose_photo_close" width="24" height="24"/>
+        <image name="compose_pic_add" width="70" height="70"/>
+        <image name="compose_pic_add_highlighted" width="70" height="70"/>
+    </resources>
+</document>

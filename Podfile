@@ -7,4 +7,9 @@ target 'FKSwiftWB' do
 
   # Pods for FKSwiftWB
   pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'SnapKit'
+  pod 'SVProgressHUD'
+  pod 'MJRefresh'
+  pod 'HYLabel'
 end
